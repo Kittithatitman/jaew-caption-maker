@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Sparkles, Key, AlertCircle } from 'lucide-react';
 import ImageUpload from '../components/ImageUpload';
@@ -73,6 +72,20 @@ const Index = () => {
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <div className="text-center">
+            {/* Logos */}
+            <div className="flex justify-center items-center space-x-6 mb-4">
+              <img 
+                src="/lovable-uploads/4594ef05-671c-453b-9b3e-0548a2f42350.png" 
+                alt="วิทยาลัยอาชีวศึกษาแพร่" 
+                className="h-16 w-16 object-contain"
+              />
+              <img 
+                src="/lovable-uploads/8d1fbc92-df6a-4071-9633-5987f660023a.png" 
+                alt="Chee wa PHRAE" 
+                className="h-16 w-16 object-contain"
+              />
+            </div>
+            
             <h1 className="text-3xl font-bold text-gray-900 flex items-center justify-center space-x-2">
               <Sparkles className="text-blue-500" />
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -204,7 +217,22 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-12 py-6 border-t border-gray-200">
+        <div className="text-center mt-12 py-8 border-t border-gray-200 bg-white/50 rounded-lg">
+          <div className="flex justify-center items-center space-x-4 mb-4">
+            <img 
+              src="/lovable-uploads/4594ef05-671c-453b-9b3e-0548a2f42350.png" 
+              alt="วิทยาลัยอาชีวศึกษาแพร่" 
+              className="h-8 w-8 object-contain"
+            />
+            <img 
+              src="/lovable-uploads/8d1fbc92-df6a-4071-9633-5987f660023a.png" 
+              alt="Chee wa PHRAE" 
+              className="h-8 w-8 object-contain"
+            />
+          </div>
+          <p className="text-gray-600 font-medium mb-2">
+            © 2025 Caption Generator . พัฒนาโดย ทีมพัฒนานวัตกรรมวิทยาลัยอาชีวศึกษาแพร่
+          </p>
           <p className="text-gray-500 text-sm">
             สร้างด้วย ❤️ เพื่อคนไทยทุกคน | ใช้ OpenAI GPT-4o-mini
           </p>
